@@ -19,7 +19,7 @@ After that you need to create a db with SQLITE, for this just type:
 
 > flask db init
 
-> flask migrate -m "Some commentary"
+> flask db migrate -m "Some commentary"
 
 If all this will succeed do:
 
