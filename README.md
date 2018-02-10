@@ -36,8 +36,12 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'Your Secret Key here!'
+    
+    # SqlAlchemy configuration
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    
+    # SMTP Google configuration
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
@@ -45,6 +49,8 @@ class Config(object):
     MAIL_USERNAME = 'youremail@gmail.com'
     MAIL_PASSWORD = 'Your Google Password'
     ADMINS = ['Your email!']
+    
+    # Limitations of Posts for pagination
     POSTS_PER_PAGE = 5
 ```
 
