@@ -27,10 +27,10 @@ If all this will succeed do:
 
 This will create your database, ready for use.
 
-To complete, one more thing is needed, create a Config file, for use of Flask.
+To complete, one more thing is needed, create a config.py file, for use of Flask.
 Create this file in the source of this project and put this lines:
 
-```
+```python
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
