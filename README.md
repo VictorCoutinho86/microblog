@@ -29,7 +29,7 @@ This will create your database, ready for use.
 To complete, one more thing is needed, create a Config file, for use of Flask.
 Create this file in the source of this project and put this lines:
 
-'''
+```
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -46,7 +46,7 @@ class Config(object):
     MAIL_PASSWORD = 'Your Google Password'
     ADMINS = ['Your email!']
     POSTS_PER_PAGE = 5
-'''
+```
 
 Doing this the project is ready to use, you can do that using:
 
