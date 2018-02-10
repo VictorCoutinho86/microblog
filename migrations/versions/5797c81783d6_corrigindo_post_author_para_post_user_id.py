@@ -1,8 +1,8 @@
-"""followers
+"""corrigindo post.author para post.user_id
 
-Revision ID: 266124a69887
+Revision ID: 5797c81783d6
 Revises: 
-Create Date: 2018-02-09 17:31:21.255731
+Create Date: 2018-02-09 19:45:49.452608
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '266124a69887'
+revision = '5797c81783d6'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -39,8 +39,8 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('body', sa.String(length=140), nullable=True),
     sa.Column('timestamp', sa.DateTime(), nullable=True),
-    sa.Column('author', sa.Integer(), nullable=True),
-    sa.ForeignKeyConstraint(['author'], ['user.id'], ),
+    sa.Column('user_id', sa.Integer(), nullable=True),
+    sa.ForeignKeyConstraint(['user_id'], ['user.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
     op.create_index(op.f('ix_post_timestamp'), 'post', ['timestamp'], unique=False)
