@@ -70,7 +70,7 @@ class User(UserMixin, db.Model):
             id = jwt.decode(token, app.config['SECRET_KEY'],
                             algorithms=['HS256'])['reset_password']
         except:
-            print('Email não cadastrado!!')
+            print('Token expirado!!')
             return
         return User.query.get(id)
 
