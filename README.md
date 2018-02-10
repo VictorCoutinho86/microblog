@@ -4,18 +4,18 @@ For use this project, open a command window, go to source of this project and ru
 
 > pip install -r requeriments.txt
 
-for install all the dependencies needs for this project
+For installation of all dependencies needed for this project.
 To do this is necessary that you **already have python and pip installed and configured**.
 
-After you need to run:
+After, you need to run:
 
 > export FLASK_APP=microblog.py
 
-or, if you is using Windows:
+or, if you using Windows:
 
 > set FLASK_APP=microblog.py
 
-After that you need to create a db with SQLITE, for this just type:
+After that you need to create a database with SQLITE, for this just type:
 
 > flask db init
 
