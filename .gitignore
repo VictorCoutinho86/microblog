@@ -3,4 +3,3 @@ venv/
 config.py
 app.db
 *.log
-app/static/img/
