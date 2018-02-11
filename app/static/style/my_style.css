@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    background-color: lightseagreen;
+}
+.footer{
+    border-top: 1px solid black;
+    background-color: lightseagreen;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.footer a{
+    color: darkblue;
+}
+.footer a:hover{
+    color: brown;
+}
+.container_fluid{
+    background-color: lightseagreen;
+    min-height:98%;
+	position:relative;
+	width:800px;
+}
+.login_page{
+    margin-top: 5%;
+    border: 2px solid darkgreen;
+}
+
+.login_page form{
+    width: 100%;
+}
+.posts{
+    border-top: 1px solid grey;
+}
+.media{
+    padding-top: 4px;
+}
+.login_page form input[type=text]{
+    width: 100%;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+.login_page form input[type=password]{
+    width: 100%;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
