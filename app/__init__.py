@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from flask_bootstrap import Bootstrap
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -14,6 +15,7 @@ db = SQLAlchemy(app)
 mail = Mail(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
+bootstrap = Bootstrap(app)
 login.login_view = 'login'
 
 if not app.debug:

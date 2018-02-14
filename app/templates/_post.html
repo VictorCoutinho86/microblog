@@ -1,18 +1,17 @@
-<div class="posts">
-{% for post in posts %}
-<div class="media">
-    <img class="d-flex mr-3" src="{{ post.author.avatar(48) }}" alt="Gravatar of {{ post.author.username }}">
-    <div class="media-body">
-        <h6 class="mt-0">
-            <a href="{{ url_for('user', username=post.author.username) }}">{{ post.author.username }}</a>
-        </h6>
-        {{post.body }}
-    </div>
-</div>
-{% endfor %} 
-{% if prev %}
-<a href="{{ prev }}">Newer posts</a>
-{% endif %} {% if next %}
-<a href="{{ next }}">Older posts</a>
-{% endif %}
-</div>
+<table class="table table-hover">
+    <tr>
+        <td width="70px">
+            <a href="{{ url_for('user', username=post.author.username) }}">
+                <img src="{{ post.author.avatar(70) }}"/>
+            </a>
+        </td>
+        <td>
+            <a href="{{ url_for('user', username=post.author.username) }}">
+                {{ post.author.username }}
+            </a>
+            says:
+            <br>
+            {{ post.body }}
+        </td>
+    </tr>
+</table>

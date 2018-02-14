@@ -1,68 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends 'bootstrap/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% if title %}
-    <title>{{ title }} - Microblog</title>
-    {% else %}
-    <title>Welcome to Microblog</title>
-    {% endif %}
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/my_style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/normalize.css') }}" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
+{% block title %}
+{% if title %}{{ title }} - Microblog{% else %}Welcome to Microblog{% endif %}
+{% endblock %}
 
-<body>
-    <div class="container-fluid">
-        {% if not current_user.is_anonymous %}
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+{% block navbar %}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('explore') }}">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        {% endif %}
-        {% with messages = get_flashed_messages() %} 
-        {% if messages %}
-        <ul>
-            {% for message in messages %}
-            <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %} {% endwith %}
-        <div class="content">
-            {% block content %}{% endblock %}
-        </div><!-- fim .content -->
-    </div><!-- fim .container -->
-    <div class="footer text-center">
-        <span>Desenvolvido por
-            <a href="https://www.linkedin.com/in/victorcoutinhomelo" target="new">Victor Coutinho</a>. &copy;2018</span>
+            <a class="navbar-brand" href="{{ url_for('index') }}">Microblog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('explore') }}">Explore</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_anonymous %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                {% else %}
+                <li><a href="{{ url_for('user', username=current_user.username) }}">Profile</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% endif %}
+            </ul>
+        </div>
     </div>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+</nav>
+{% endblock %}
+{% block content %}
+<div class="container">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-info" role="alert">{{ message }}</div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
 
-</html>
+    {# application content needs to be provided in the app_content block #}
+    {% block app_content %}{% endblock %}
+</div>
+{% endblock %}

@@ -21,7 +21,7 @@ body{
 }
 .container_fluid{
     background-color: lightseagreen;
-    min-height:98%;
+    min-height:100%;
 	position:relative;
 	width:800px;
 }
