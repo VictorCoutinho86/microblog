@@ -1,8 +1,8 @@
 # MICROBLOG
 ### Making the tutorial of Miguel Grinberg [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-For use this project, open a command window, go to source of this project and run:
+For use this project, open a command window, do a git clone of this project, than go to source of project and run:
 
-> pip install -r requeriments.txt
+> pip install -r requirements.txt
 
 For installation of all dependencies needed for this project.
 To do this is necessary that you **already have python and pip installed and configured**.
@@ -19,6 +19,8 @@ After that you need to create a database with SQLITE, for this just type:
 
 > flask db init
 
+And
+
 > flask db migrate -m "Some commentary"
 
 If all this will succeed do:
@@ -28,7 +30,7 @@ If all this will succeed do:
 This will create your database, ready for use.
 
 To complete, one more thing is needed, create a config.py file, for use of Flask.
-Create this file in the source of this project and put this lines:
+Create this file in the source of this project and put this lines, changing the "MAIL_USERNAME", "MAIL_PASSWORD" and "ADMINS" for your own informations:
 
 ```python
 import os
