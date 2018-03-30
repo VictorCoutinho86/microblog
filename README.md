@@ -1,7 +1,7 @@
 # MICROBLOG
 ### Making the tutorial of Miguel Grinberg [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
-#### Now, if you want to play with this project without any installation, click [here](microblog.cf)
+#### Now, if you want to play with this project without any installation, click [here](https://microblog.cf)
 
 #### Or, do the tutorial above to install e run in your machine:
 
