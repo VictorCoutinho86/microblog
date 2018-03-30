@@ -28,3 +28,6 @@ class Config(object):
 
     # Languages available
     LANGUAGES = ['en', 'es', 'pt_BR']
+
+    # Elasticsearch configuration
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')

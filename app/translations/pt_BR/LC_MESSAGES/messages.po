@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-30 15:04-0300\n"
+"POT-Creation-Date: 2018-03-30 16:24-0300\n"
 "PO-Revision-Date: 2018-03-30 15:04-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: app/__init__.py:18
+#: app/__init__.py:19
 msgid "Please log in to access this page."
 msgstr "Por favor, entre para acessar está pagina."
 
@@ -107,6 +107,10 @@ msgstr "Enviar"
 msgid "Say something"
 msgstr "Diga algo"
 
+#: app/main/forms.py:32 app/main/routes.py:157
+msgid "Search"
+msgstr "Procurar"
+
 #: app/main/routes.py:35
 msgid "Your post is now live!"
 msgstr "Sua postagem foi enviada!"
@@ -163,19 +167,19 @@ msgstr "Traduzir"
 msgid "Welcome to Microblog"
 msgstr "Bem-Vindo ao Microblog"
 
-#: app/templates/base.html:26
+#: app/templates/base.html:35
 msgid "Login"
 msgstr "Login"
 
-#: app/templates/base.html:28
+#: app/templates/base.html:37
 msgid "Profile"
 msgstr "Perfil"
 
-#: app/templates/base.html:29
+#: app/templates/base.html:38
 msgid "Logout"
 msgstr "Sair"
 
-#: app/templates/base.html:66
+#: app/templates/base.html:75
 msgid "Error: Could not contact server."
 msgstr "Erro: Não foi possível contactar o servidor"
 
@@ -191,6 +195,18 @@ msgstr "Novas"
 #: app/templates/index.html:22 app/templates/user.html:36
 msgid "Older posts"
 msgstr "Antigas"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "Procurar Resultados"
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "Anterior"
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "Próximo"
 
 #: app/templates/user.html:8
 msgid "User"
