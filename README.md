@@ -2,6 +2,8 @@
 ### Making the tutorial of Miguel Grinberg [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 For use this project, open a command window, do a git clone of this project, than go to source of project and run:
 
+### Now, if you want to play with this project without any installation, click [here](microblog.cf)
+
 > pip install -r requirements.txt
 
 For installation of all dependencies needed for this project.
