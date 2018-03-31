@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-30 21:13-0300\n"
+"POT-Creation-Date: 2018-03-31 11:20-0300\n"
 "PO-Revision-Date: 2018-03-30 21:13-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt\n"
@@ -22,11 +22,15 @@ msgstr ""
 msgid "Please log in to access this page."
 msgstr "Por favor, entre para acessar está pagina."
 
-#: app/translate.py:10
+#: app/email.py:14
+msgid "Microblog Team"
+msgstr "Equipe Microblog"
+
+#: app/translate.py:13
 msgid "Error: the translation service is not configured."
 msgstr "Erro: o serviço de tradução não está configurado."
 
-#: app/translate.py:18
+#: app/translate.py:21
 msgid "Error: the translation service failed."
 msgstr "Erro: o serviço de tradução falhou."
 
@@ -107,7 +111,7 @@ msgstr "Enviar"
 msgid "Say something"
 msgstr "Diga algo"
 
-#: app/main/forms.py:32 app/main/routes.py:157
+#: app/main/forms.py:32 app/main/routes.py:156
 msgid "Search"
 msgstr "Procurar"
 
@@ -154,12 +158,12 @@ msgstr "Você não pode deixar de se seguir!"
 msgid "You are not following %(username)s."
 msgstr "Você não está seguindo %(username)s"
 
-#: app/templates/_post.html:14
+#: app/templates/_post.html:15
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s disse a %(when)s"
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "Traduzir"
 
@@ -179,7 +183,7 @@ msgstr "Perfil"
 msgid "Logout"
 msgstr "Sair"
 
-#: app/templates/base.html:75
+#: app/templates/base.html:76
 msgid "Error: Could not contact server."
 msgstr "Erro: Não foi possível contactar o servidor"
 
@@ -188,11 +192,11 @@ msgstr "Erro: Não foi possível contactar o servidor"
 msgid "Hi, %(username)s!"
 msgstr "Olá, %(username)s"
 
-#: app/templates/index.html:17 app/templates/user.html:31
+#: app/templates/index.html:17 app/templates/user.html:39
 msgid "Newer posts"
 msgstr "Novas"
 
-#: app/templates/index.html:22 app/templates/user.html:36
+#: app/templates/index.html:22 app/templates/user.html:44
 msgid "Older posts"
 msgstr "Antigas"
 
@@ -208,33 +212,41 @@ msgstr "Anterior"
 msgid "Next results"
 msgstr "Próximo"
 
-#: app/templates/user.html:8
+#: app/templates/user.html:11
+msgid "If you want to change this image"
+msgstr "Se você quiser alterar está imagem"
+
+#: app/templates/user.html:12
+msgid "Click Here"
+msgstr "Clique Aqui"
+
+#: app/templates/user.html:16
 msgid "User"
 msgstr "Usuário"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:19
 msgid "Last seen on"
 msgstr "Visto pela ultima vez em "
 
-#: app/templates/user.html:13
+#: app/templates/user.html:21
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d seguidores"
 
-#: app/templates/user.html:13
+#: app/templates/user.html:21
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d seguindo"
 
-#: app/templates/user.html:15
+#: app/templates/user.html:23
 msgid "Edit your profile"
 msgstr "Edite seu Perfil"
 
-#: app/templates/user.html:17
+#: app/templates/user.html:25
 msgid "Follow"
 msgstr "Seguir"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:27
 msgid "Unfollow"
 msgstr "Deixar de Seguir"
 
@@ -258,6 +270,49 @@ msgstr "Clique para redefini-la"
 msgid "Reset Your Password"
 msgstr "Redefinir sua Senha"
 
+#: app/templates/email/reset_password.html:1
+#: app/templates/email/reset_password.txt:1
+msgid "Dear"
+msgstr "Caro"
+
+#: app/templates/email/reset_password.html:3
+msgid "To reset your password"
+msgstr "Para redefinir sua senha"
+
+#: app/templates/email/reset_password.html:5
+msgid "click here"
+msgstr "Clique Aqui"
+
+#: app/templates/email/reset_password.html:8
+msgid ""
+"Alternatively, you can paste the following link in your browser address "
+"bar:"
+msgstr ""
+"Alternativamente, você pode colar o link abaixo na barra de endereços do seu "
+"navegador"
+
+#: app/templates/email/reset_password.html:10
+msgid "If you have not requested a password reset simply ignore this message"
+msgstr "Se não foi você quem solicitou essa alteração, ignore esta mensagem"
+
+#: app/templates/email/reset_password.html:11
+#: app/templates/email/reset_password.txt:9
+msgid "Sincerely"
+msgstr "Atenciosamente"
+
+#: app/templates/email/reset_password.html:12
+#: app/templates/email/reset_password.txt:11
+msgid "The Microblog Team"
+msgstr "A Equipe Microblog"
+
+#: app/templates/email/reset_password.txt:3
+msgid "To reset your password click on the following link:"
+msgstr "Para redefinir sua senha, clique no link a seguir:"
+
+#: app/templates/email/reset_password.txt:7
+msgid "If you have not requested a password reset simply ignore this message."
+msgstr "Se você não solicitou essa alteração, peço que ignore essa mensagem."
+
 #: app/templates/errors/404.html:4
 msgid "Not Found"
 msgstr "Não Encontrado"
@@ -273,3 +328,4 @@ msgstr "Ocorreu um erro inesperado"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "O administrador foi notificado. Desculpe pela inconveniência!"
+
