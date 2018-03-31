@@ -5,6 +5,8 @@ from flask_babel import _
 
 
 def translate(text, source_language, dest_language):
+    if len(source_language) > 2:
+        source_language = get_lang(text)
     if 'MS_TRANSLATOR_KEY' not in current_app.config or \
             not current_app.config['MS_TRANSLATOR_KEY']:
         return _('Error: the translation service is not configured.')
@@ -17,3 +19,12 @@ def translate(text, source_language, dest_language):
     if r.status_code != 200:
         return _('Error: the translation service failed.')
     return json.loads(r.content.decode('utf-8-sig'))
+
+
+def get_lang(text):
+    lang = requests.post(current_app.config['DETECT_URL'], {'q': [text]})
+    data = lang.json()
+    print(data['data']['detections'][0][0]['language'])
+    return data['data']['detections'][0][0]['language']
+
+

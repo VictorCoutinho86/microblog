@@ -24,10 +24,12 @@ class Config(object):
 
     #MS TRANSLATOR KEY
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    DETECT_URL = os.environ.get('DETECT_URL')
+    TRANSLATE_URL = os.environ.get('TRANSLATE_URL')
 
 
     # Languages available
-    LANGUAGES = ['en', 'es', 'pt_BR']
+    LANGUAGES = ['en', 'es', 'pt']
 
     # Elasticsearch configuration
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
