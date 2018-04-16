@@ -40,7 +40,7 @@ msgstr "[Microblog] Redefina sua senha"
 
 #: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
 msgid "Username"
-msgstr "Nome de Usuário"
+msgstr "Usuário"
 
 #: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:41
 msgid "Password"
