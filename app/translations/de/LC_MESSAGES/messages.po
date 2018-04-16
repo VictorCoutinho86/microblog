@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-16 20:12-0300\n"
+"POT-Creation-Date: 2018-04-16 20:30-0300\n"
 "PO-Revision-Date: 2018-03-31 09:47-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -266,7 +266,7 @@ msgstr "Haben Sie Ihr Passwort vergessen?"
 
 #: app/templates/auth/login.html:15
 msgid "Click to Reset It"
-msgstr ""
+msgstr "Klicken Sie, um es zurückzusetzen"
 
 #: app/templates/auth/reset_password.html:5
 msgid "Reset Your Password"
@@ -336,13 +336,4 @@ msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr ""
 "Der Administrator wurde benachrichtigt. Entschuldigen Sie die "
 "Unannehmlichkeiten!"
-
-#~ msgid "Developed by"
-#~ msgstr "Entwickelt von"
-
-#~ msgid "from the"
-#~ msgstr "von dem"
-
-#~ msgid "by"
-#~ msgstr "durch"
 

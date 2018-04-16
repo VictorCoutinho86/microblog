@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-16 20:12-0300\n"
+"POT-Creation-Date: 2018-04-16 20:30-0300\n"
 "PO-Revision-Date: 2018-03-31 09:43-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -171,23 +171,23 @@ msgstr "Traduire"
 
 #: app/templates/base.html:8
 msgid "Welcome to Microblog"
-msgstr ""
+msgstr "Bienvenue sur Microblog"
 
 #: app/templates/base.html:41
 msgid "Login"
-msgstr ""
+msgstr "Entrer"
 
 #: app/templates/base.html:43
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: app/templates/base.html:44
 msgid "Logout"
-msgstr ""
+msgstr "Partir"
 
 #: app/templates/base.html:90
 msgid "Error: Could not contact server."
-msgstr ""
+msgstr "Erreur: Impossible de contacter le serveur."
 
 #: app/templates/index.html:5
 #, python-format
@@ -334,28 +334,4 @@ msgstr "Une erreur imprévue s'est produite"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "L'administrateur a été averti. Désolé pour le dérangement!"
-
-#~ msgid "Welcome to Microblog"
-#~ msgstr "Bienvenue sur Microblog"
-
-#~ msgid "Login"
-#~ msgstr "Entrer"
-
-#~ msgid "Profile"
-#~ msgstr "Profil"
-
-#~ msgid "Logout"
-#~ msgstr "Partir"
-
-#~ msgid "Error: Could not contact server."
-#~ msgstr "Erreur: Impossible de contacter le serveur."
-
-#~ msgid "Developed by"
-#~ msgstr "Développé par"
-
-#~ msgid "from the"
-#~ msgstr "du"
-
-#~ msgid "by"
-#~ msgstr ""
 

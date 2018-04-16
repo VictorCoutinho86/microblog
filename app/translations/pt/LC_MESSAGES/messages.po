@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-16 20:12-0300\n"
+"POT-Creation-Date: 2018-04-16 20:30-0300\n"
 "PO-Revision-Date: 2018-03-30 21:13-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt\n"
@@ -169,19 +169,19 @@ msgstr "Traduzir"
 
 #: app/templates/base.html:8
 msgid "Welcome to Microblog"
-msgstr ""
+msgstr "Bem-Vindo ao Microblog"
 
 #: app/templates/base.html:41
 msgid "Login"
-msgstr ""
+msgstr "Logar"
 
 #: app/templates/base.html:43
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
 #: app/templates/base.html:44
 msgid "Logout"
-msgstr ""
+msgstr "Sair"
 
 #: app/templates/base.html:90
 msgid "Error: Could not contact server."
@@ -193,7 +193,7 @@ msgid "Hi, %(username)s!"
 msgstr "Olá, %(username)s"
 
 #: app/templates/index.html:17 app/templates/user.html:42
-msgid "Newercd posts"
+msgid "Newer posts"
 msgstr "Novas"
 
 #: app/templates/index.html:22 app/templates/user.html:47
@@ -328,28 +328,4 @@ msgstr "Ocorreu um erro inesperado"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "O administrador foi notificado. Desculpe pela inconveniência!"
-
-#~ msgid "Welcome to Microblog"
-#~ msgstr "Bem-Vindo ao Microblog"
-
-#~ msgid "Login"
-#~ msgstr "Login"
-
-#~ msgid "Profile"
-#~ msgstr "Perfil"
-
-#~ msgid "Logout"
-#~ msgstr "Sair"
-
-#~ msgid "Error: Could not contact server."
-#~ msgstr "Erro: Não foi possível contactar o servidor"
-
-#~ msgid "Developed by"
-#~ msgstr "Desenvolvido por"
-
-#~ msgid "from the"
-#~ msgstr "a partir do"
-
-#~ msgid "by"
-#~ msgstr "por"
 
