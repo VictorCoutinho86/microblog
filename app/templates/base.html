@@ -1,7 +1,7 @@
 {% extends 'bootstrap/base.html' %}
 {% block head %}
   {{super()}}
-    <link rel="icon" href="{{ url_for('static', filename='microblog.jpg') }}" type="image/gif" sizes="32x32">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='microblog.jpg') }}" type="image/gif" sizes="32x32">
 {% endblock %}
 
 {% block title %}
@@ -50,6 +50,7 @@
 {% endblock %}
 
 {% block content %}
+{{super()}}
     <div class="container">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -62,8 +63,11 @@
         {# application content needs to be provided in the app_content block #}
         {% block app_content %}{% endblock %}
     </div>
-{% endblock %}
+{% block footer %}
+<footer>&copy; 2016 Awesome, Inc.</footer>
+{% endblock footer %}
 
+{% endblock %}
 {% block scripts %}
     {{ super() }}
     {{ moment.include_moment() }}
