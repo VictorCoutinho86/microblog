@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-31 11:20-0300\n"
+"POT-Creation-Date: 2018-04-16 20:12-0300\n"
 "PO-Revision-Date: 2017-09-29 23:25-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -119,11 +119,11 @@ msgstr "Buscar"
 msgid "Your post is now live!"
 msgstr "¡Tu artículo ha sido publicado!"
 
-#: app/main/routes.py:44 app/templates/base.html:21
+#: app/main/routes.py:44 app/templates/base.html:26
 msgid "Home"
 msgstr "Inicio"
 
-#: app/main/routes.py:59 app/templates/base.html:22
+#: app/main/routes.py:59 app/templates/base.html:27
 msgid "Explore"
 msgstr "Explorar"
 
@@ -167,36 +167,36 @@ msgstr "%(username)s dijo %(when)s"
 msgid "Translate"
 msgstr "Traducir"
 
-#: app/templates/base.html:4
+#: app/templates/base.html:8
 msgid "Welcome to Microblog"
 msgstr "Bienvenido a Microblog"
 
-#: app/templates/base.html:35
+#: app/templates/base.html:41
 msgid "Login"
-msgstr "Ingresar"
+msgstr ""
 
-#: app/templates/base.html:37
+#: app/templates/base.html:43
 msgid "Profile"
 msgstr "Perfil"
 
-#: app/templates/base.html:38
+#: app/templates/base.html:44
 msgid "Logout"
-msgstr "Salir"
+msgstr ""
 
-#: app/templates/base.html:76
+#: app/templates/base.html:90
 msgid "Error: Could not contact server."
-msgstr "Error: el servidor no pudo ser contactado."
+msgstr ""
 
 #: app/templates/index.html:5
 #, python-format
 msgid "Hi, %(username)s!"
 msgstr "¡Hola, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:39
+#: app/templates/index.html:17 app/templates/user.html:42
 msgid "Newer posts"
 msgstr "Artículos siguientes"
 
-#: app/templates/index.html:22 app/templates/user.html:44
+#: app/templates/index.html:22 app/templates/user.html:47
 msgid "Older posts"
 msgstr "Artículos previos"
 
@@ -212,41 +212,41 @@ msgstr "Resultados anteriores"
 msgid "Next results"
 msgstr "Resultados siguientes"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:13
 msgid "If you want to change this image"
 msgstr "Si quieres cambiar esta imagen"
 
-#: app/templates/user.html:12
+#: app/templates/user.html:14
 msgid "Click Here"
 msgstr "Haga clic aquí"
 
-#: app/templates/user.html:16
+#: app/templates/user.html:19
 msgid "User"
 msgstr "Usuario"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:22
 msgid "Last seen on"
 msgstr "Última visita"
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d seguidores"
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d following"
 msgstr "siguiendo a %(count)d"
 
-#: app/templates/user.html:23
+#: app/templates/user.html:26
 msgid "Edit your profile"
 msgstr "Editar tu perfil"
 
-#: app/templates/user.html:25
+#: app/templates/user.html:28
 msgid "Follow"
 msgstr "Seguir"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:30
 msgid "Unfollow"
 msgstr "Dejar de seguir"
 
@@ -332,4 +332,28 @@ msgstr "Ha ocurrido un error inesperado"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "El administrador ha sido notificado. ¡Lamentamos la inconveniencia!"
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr "Bienvenido a Microblog"
+
+#~ msgid "Login"
+#~ msgstr "Ingresar"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Logout"
+#~ msgstr "Salir"
+
+#~ msgid "Error: Could not contact server."
+#~ msgstr "Error: el servidor no pudo ser contactado."
+
+#~ msgid "Developed by"
+#~ msgstr "Desarrollado por"
+
+#~ msgid "from the"
+#~ msgstr ""
+
+#~ msgid "by"
+#~ msgstr ""
 

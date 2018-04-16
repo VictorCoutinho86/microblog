@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-31 11:20-0300\n"
+"POT-Creation-Date: 2018-04-16 20:12-0300\n"
 "PO-Revision-Date: 2018-03-30 21:13-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt\n"
@@ -119,11 +119,11 @@ msgstr "Procurar"
 msgid "Your post is now live!"
 msgstr "Sua postagem foi enviada!"
 
-#: app/main/routes.py:44 app/templates/base.html:21
+#: app/main/routes.py:44 app/templates/base.html:26
 msgid "Home"
 msgstr "Início"
 
-#: app/main/routes.py:59 app/templates/base.html:22
+#: app/main/routes.py:59 app/templates/base.html:27
 msgid "Explore"
 msgstr "Explore"
 
@@ -167,36 +167,36 @@ msgstr "%(username)s disse a %(when)s"
 msgid "Translate"
 msgstr "Traduzir"
 
-#: app/templates/base.html:4
+#: app/templates/base.html:8
 msgid "Welcome to Microblog"
-msgstr "Bem-Vindo ao Microblog"
+msgstr ""
 
-#: app/templates/base.html:35
+#: app/templates/base.html:41
 msgid "Login"
-msgstr "Login"
+msgstr ""
 
-#: app/templates/base.html:37
+#: app/templates/base.html:43
 msgid "Profile"
-msgstr "Perfil"
+msgstr ""
 
-#: app/templates/base.html:38
+#: app/templates/base.html:44
 msgid "Logout"
-msgstr "Sair"
+msgstr ""
 
-#: app/templates/base.html:76
+#: app/templates/base.html:90
 msgid "Error: Could not contact server."
-msgstr "Erro: Não foi possível contactar o servidor"
+msgstr "Erro: Não foi possível contactar o servidor."
 
 #: app/templates/index.html:5
 #, python-format
 msgid "Hi, %(username)s!"
 msgstr "Olá, %(username)s"
 
-#: app/templates/index.html:17 app/templates/user.html:39
-msgid "Newer posts"
+#: app/templates/index.html:17 app/templates/user.html:42
+msgid "Newercd posts"
 msgstr "Novas"
 
-#: app/templates/index.html:22 app/templates/user.html:44
+#: app/templates/index.html:22 app/templates/user.html:47
 msgid "Older posts"
 msgstr "Antigas"
 
@@ -212,41 +212,41 @@ msgstr "Anterior"
 msgid "Next results"
 msgstr "Próximo"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:13
 msgid "If you want to change this image"
 msgstr "Se você quiser alterar está imagem"
 
-#: app/templates/user.html:12
+#: app/templates/user.html:14
 msgid "Click Here"
 msgstr "Clique Aqui"
 
-#: app/templates/user.html:16
+#: app/templates/user.html:19
 msgid "User"
 msgstr "Usuário"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:22
 msgid "Last seen on"
 msgstr "Visto pela ultima vez em "
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d seguidores"
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d seguindo"
 
-#: app/templates/user.html:23
+#: app/templates/user.html:26
 msgid "Edit your profile"
 msgstr "Edite seu Perfil"
 
-#: app/templates/user.html:25
+#: app/templates/user.html:28
 msgid "Follow"
 msgstr "Seguir"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:30
 msgid "Unfollow"
 msgstr "Deixar de Seguir"
 
@@ -288,8 +288,8 @@ msgid ""
 "Alternatively, you can paste the following link in your browser address "
 "bar:"
 msgstr ""
-"Alternativamente, você pode colar o link abaixo na barra de endereços do seu "
-"navegador"
+"Alternativamente, você pode colar o link abaixo na barra de endereços do "
+"seu navegador"
 
 #: app/templates/email/reset_password.html:10
 msgid "If you have not requested a password reset simply ignore this message"
@@ -328,4 +328,28 @@ msgstr "Ocorreu um erro inesperado"
 #: app/templates/errors/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "O administrador foi notificado. Desculpe pela inconveniência!"
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr "Bem-Vindo ao Microblog"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "Profile"
+#~ msgstr "Perfil"
+
+#~ msgid "Logout"
+#~ msgstr "Sair"
+
+#~ msgid "Error: Could not contact server."
+#~ msgstr "Erro: Não foi possível contactar o servidor"
+
+#~ msgid "Developed by"
+#~ msgstr "Desenvolvido por"
+
+#~ msgid "from the"
+#~ msgstr "a partir do"
+
+#~ msgid "by"
+#~ msgstr "por"
 

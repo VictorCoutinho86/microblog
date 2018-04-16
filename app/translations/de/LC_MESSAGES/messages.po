@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-03-31 11:20-0300\n"
+"POT-Creation-Date: 2018-04-16 20:12-0300\n"
 "PO-Revision-Date: 2018-03-31 09:47-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -121,11 +121,11 @@ msgstr "Suche"
 msgid "Your post is now live!"
 msgstr "Dein Beitrag ist jetzt live!"
 
-#: app/main/routes.py:44 app/templates/base.html:21
+#: app/main/routes.py:44 app/templates/base.html:26
 msgid "Home"
 msgstr "Zuhause"
 
-#: app/main/routes.py:59 app/templates/base.html:22
+#: app/main/routes.py:59 app/templates/base.html:27
 msgid "Explore"
 msgstr "Erkunden"
 
@@ -169,23 +169,23 @@ msgstr "%(username)s sagte %(when)s"
 msgid "Translate"
 msgstr "Übersetzen"
 
-#: app/templates/base.html:4
+#: app/templates/base.html:8
 msgid "Welcome to Microblog"
 msgstr "Willkommen bei Microblog"
 
-#: app/templates/base.html:35
+#: app/templates/base.html:41
 msgid "Login"
-msgstr "Einloggen"
+msgstr "Anmeldung"
 
-#: app/templates/base.html:37
+#: app/templates/base.html:43
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:38
+#: app/templates/base.html:44
 msgid "Logout"
 msgstr "Ausloggen"
 
-#: app/templates/base.html:76
+#: app/templates/base.html:90
 msgid "Error: Could not contact server."
 msgstr "Fehler: Der Server konnte nicht kontaktiert werden."
 
@@ -194,11 +194,11 @@ msgstr "Fehler: Der Server konnte nicht kontaktiert werden."
 msgid "Hi, %(username)s!"
 msgstr "Hallo, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:39
+#: app/templates/index.html:17 app/templates/user.html:42
 msgid "Newer posts"
 msgstr "Neuere Beiträge"
 
-#: app/templates/index.html:22 app/templates/user.html:44
+#: app/templates/index.html:22 app/templates/user.html:47
 msgid "Older posts"
 msgstr "Älter Beiträge"
 
@@ -214,41 +214,41 @@ msgstr "Vorherige Ergebnisse"
 msgid "Next results"
 msgstr "Nächste Ergebnisse"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:13
 msgid "If you want to change this image"
 msgstr "Wenn Sie dieses Bild ändern möchten"
 
-#: app/templates/user.html:12
+#: app/templates/user.html:14
 msgid "Click Here"
 msgstr "Klick hier"
 
-#: app/templates/user.html:16
+#: app/templates/user.html:19
 msgid "User"
 msgstr "Benutzer"
 
-#: app/templates/user.html:19
+#: app/templates/user.html:22
 msgid "Last seen on"
 msgstr "Zuletzt gesehen am"
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d followers"
 msgstr "%(count)d Anhänger"
 
-#: app/templates/user.html:21
+#: app/templates/user.html:24
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d Folgendes"
 
-#: app/templates/user.html:23
+#: app/templates/user.html:26
 msgid "Edit your profile"
 msgstr "Bearbeite dein Profil"
 
-#: app/templates/user.html:25
+#: app/templates/user.html:28
 msgid "Follow"
 msgstr "Folgen"
 
-#: app/templates/user.html:27
+#: app/templates/user.html:30
 msgid "Unfollow"
 msgstr "Nicht folgen"
 
@@ -336,4 +336,13 @@ msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr ""
 "Der Administrator wurde benachrichtigt. Entschuldigen Sie die "
 "Unannehmlichkeiten!"
+
+#~ msgid "Developed by"
+#~ msgstr "Entwickelt von"
+
+#~ msgid "from the"
+#~ msgstr "von dem"
+
+#~ msgid "by"
+#~ msgstr "durch"
 
