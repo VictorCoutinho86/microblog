@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request, g, \
     jsonify, current_app
-from flask_login import current_user, login_required
+from flask_login import current_user, login_required, logout_user
 from flask_babel import _, get_locale
 # from guess_language import guess_language
 from app import db
@@ -155,3 +155,12 @@ def search():
         if page > 1 else None
     return render_template('search.html', title=_('Search'), posts=posts,
                            next_url=next_url, prev_url=prev_url)
+
+
+@bp.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    print("usuário: " + username)
+    user = User.query.filter_by(username=username).first_or_404()
+    print(user)
+    return render_template('user_popup.html', user=user)
