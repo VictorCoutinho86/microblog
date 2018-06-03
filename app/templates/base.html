@@ -13,9 +13,10 @@
             {% with tasks = current_user.get_tasks_in_progress() %}
             {% if tasks %}
                 {% for task in tasks %}
-                <div class="alert alert-success" role="alert">
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                     {{ task.description }}
-                    <span id="{{ task.id }}-progress">{{ task.get_progress() }}</span>%
+                    <span id="{{ task.id }}-progress">{{ task.get_progress() }}</span>
                 </div>
                 {% endfor %}
             {% endif %}
