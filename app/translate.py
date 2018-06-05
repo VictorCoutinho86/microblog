@@ -4,7 +4,7 @@ from flask import current_app
 from flask_babel import _
 
 
-def translate(post_id, text, source_language, dest_language):
+def translate(text, source_language, dest_language):
     if len(source_language) > 2 or source_language == "":
         source_language = get_lang(text)
 
