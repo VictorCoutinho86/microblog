@@ -1,6 +1,6 @@
 alembic==0.9.6
 astroid==1.6.2
-Babel==2.5.1
+Babel==2.9.1
 beautifulsoup4==4.6.0
 blinker==1.4
 bs4==0.0.1
